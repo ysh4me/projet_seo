@@ -1,0 +1,466 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Culinary Haven</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0-beta.6"></script>
+    <style>
+    /* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the page fills the full height */
+}
+ 
+/* Background and layout adjustments */
+body {
+    position: relative;
+    min-height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* Adjust transparency (0.0 to 2.0) */
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+/* Reset header padding and margin */
+.site-header {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reservation Button */
+.reservation-btn-container {
+    text-align: center;
+    margin-top: 50px; /* Adjust space from content */
+    position: relative; /* Ensure it's above the background */
+    z-index: 2; /* Higher than the background */
+}
+
+.reservation-btn {
+    display: inline-block;
+    background-color: #b87c33; /* Button color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative; /* Ensure button stays above the background */
+    z-index: 3; /* Ensure it's on top */
+}
+
+.reservation-btn:hover {
+    background-color: #c94e2f; /* Darken color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+</style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="top-menu  scroll-reveal">
+                    <div class="menu">
+                        <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+                            <button class="menu-icon dark" type="button" data-toggle="main-nav"></button>
+                            <div class="title-bar-title">Menu</div>
+                        </div>
+
+                        <nav id="main-nav" data-animate="menu-in menu-out">
+                            <ul class="main-navigation">
+                                <li><a class="m-active" href="index.html" data-text="Home">Home</a></li>
+                                <li><a class="m-anim" href="index.html#specials-grid" data-text="Specials">Specials</a></li>
+                                <li><a class="m-anim" href="index.html#about-us" data-text="About">About</a></li>
+                                <li><a class="m-anim" href="#main-menu" data-text="Menu Cart">Menu Cart</a></li>
+                                <li><a class="m-anim" href="index.html#contact-us" data-text="Contact">Contact</a></li>
+                            </ul>
+                            
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--menu section-->
+    <section id="main-menu" class="menu-cart scroll-reveal">
+        <div class="container">
+            <h1 class="header-txt">Menu Cart</h1>
+            <div class="divider">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1930 255.5" style="enable-background:new 0 0 1930 255.5;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0{fill:none;stroke:#3c3c3c;stroke-width:10;stroke-linecap:square;stroke-miterlimit:10;}
+                                </style>
+                                <polyline class="st0" points="1224,171.8 1181.3,171.8 1139.2,129.6 1065,203.9 970.5,110.4 876,203.6 801.8,129.4 759.7,171.5 
+                                    717,171.5 "/>
+                                <polyline class="st0" points="5,131.5 757.3,131.5 801.8,176.1 885.9,91.9 868.3,74.2 831.5,111 870.4,149.9 970.2,50.2 1070,149.9 
+                                    1108.8,111 1072.1,74.2 1054.4,91.9 1138.5,176.1 1183.1,131.5 1925,131.5 "/>
+                                <rect x="921.9" y="26.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 231.426 707.2043)" class="st0" width="95" height="95"/>
+                                <rect x="921.9" y="99.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 179.8072 728.5855)" class="st0" width="95" height="95"/>
+                                <rect x="940.3" y="178.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 137.3893 746.1556)" class="st0" width="58.2" height="58.2"/>
+                                </svg>
+            </div>
+            <!--.divider-->
+            <ul class="menu-navigation" data-tabs data-match-height="true" id="example-tabs">
+                <li class="tabs-title is-active"><a class="m-anim" href="#panel1" aria-selected="true" data-text="Starters">Starters</a></li>
+                <li class="tabs-title"><a class="m-anim" data-tabs-target="panel2" href="#panel2" data-text="Main Dishes">Main Dishes</a></li>
+                <li class="tabs-title"><a class="m-anim" data-tabs-target="panel3" href="#panel3" data-text="Desserts">Desserts</a></li>
+                <li class="tabs-title"><a class="m-anim" data-tabs-target="panel4" href="#panel4" data-text="Drinks">Drinks</a></li>
+            </ul>
+
+            <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-panel is-active" id="panel1">
+                    <div class="menu-content">
+                        <div class="menu-section">
+                            <table>
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                                <tr>
+                                    <td><span>SAMPHIRE FRITTERS WITH FENNEL CEVICHE </span></td>
+                                    <td><span>$19</span></td>
+                                </tr>
+                                <tr>
+                                    <td>fresh samphire, plain flour, cornflower, eggs, fennel</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$13</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$11</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$16</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--.menu-section-->
+                        <div class="menu-section">
+                            <table>
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                                <tr>
+                                    <td><span>SAMPHIRE FRITTERS WITH FENNEL CEVICHE </span></td>
+                                    <td><span>$19</span></td>
+                                </tr>
+                                <tr>
+                                    <td>fresh samphire, plain flour, cornflower, eggs, fennel</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$13</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$11</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$16</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--.menu-section-->
+                    </div>
+                    <!--.menu-content-->
+                </div>
+                <!--#panel1-->
+
+                <div class="tabs-panel" id="panel2">
+                    <div class="menu-content">
+                        <div class="menu-section">
+                            <table>
+                                <tr>
+                                    <td><span>SAMPHIRE FRITTERS WITH FENNEL CEVICHE </span></td>
+                                    <td><span>$19</span></td>
+                                </tr>
+                                <tr>
+                                    <td>fresh samphire, plain flour, cornflower, eggs, fennel</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$13</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$11</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$16</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--.menu-section-->
+                        <div class="menu-section">
+                            <table>
+                                <tr>
+                                    <td><span>SAMPHIRE FRITTERS WITH FENNEL CEVICHE </span></td>
+                                    <td><span>$19</span></td>
+                                </tr>
+                                <tr>
+                                    <td>fresh samphire, plain flour, cornflower, eggs, fennel</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$13</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$11</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$16</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--.menu-section-->
+                    </div>
+                    <!--.menu-content-->
+                </div>
+                <!--#panel2-->
+
+                <div class="tabs-panel" id="panel3">
+                    <div class="menu-content">
+                        <div class="menu-section">
+                            <table>
+
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$11</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>COURGETTE FLOWERS</span></td>
+                                    <td><span>$16</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--.menu-section-->
+                        <div class="menu-section">
+                            <table>
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                                <tr>
+                                    <td><span>PAN FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$11</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>FRIED COURGETTE FLOWERS</span></td>
+                                    <td><span>$16</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--.menu-section-->
+                    </div>
+                    <!--.menu-content-->
+                </div>
+                <!--#panel3-->
+
+                <div class="tabs-panel" id="panel4">
+                    <div class="menu-content">
+                        <div class="menu-section">
+                            <table>
+                                <tr>
+                                    <td><span>COURGETTE FLOWERS</span></td>
+                                    <td><span>$11</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--.menu-section-->
+                        <div class="menu-section">
+                            <table>
+                                <tr>
+                                    <td><span>COURGETTE FLOWERS</span></td>
+                                    <td><span>$11</span></td>
+                                </tr>
+                                <tr>
+                                    <td>courgette flowers, goats cheese, red onion, pine nuts</td>
+                                </tr>
+                                <tr>
+                                    <td><span>SMOKED RICOTTA TERRINE</span></td>
+                                    <td><span>$12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ricotta, shallots, cheddar, capers</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--.menu-section-->
+                    </div>
+                    <!--.menu-content-->
+</div>
+</div>
+</div>
+<div class="reservation-btn-container">
+    <a href="index.html#contact-us" class="reservation-btn">Reserve Now</a>
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.0.2/what-input.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script type="text/javascript">
+        $('.slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            arrows: false,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+    </script>
+
+    <script>
+        $(window).on('load', function() {
+            $("#preloader").fadeOut();
+        });
+    </script>
+</body>
+</html>

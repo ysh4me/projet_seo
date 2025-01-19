@@ -1,0 +1,189 @@
+/* General Reset and Layout Adjustments */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the page fills the full height */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and Layout Settings */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh; /* Full height */
+}
+
+/* Overlay for Background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* Adjust transparency */
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+/* Header Styles */
+.site-header {
+    padding: 20px 0;
+    margin: 0;
+    background-color: #fff;
+    z-index: 10; /* Keep header above content */
+    position: relative;
+}
+
+/* Ensure the page content below the header */
+#main-menu {
+    margin-top: 100px; /* Adjust as needed */
+    z-index: 5;
+    position: relative;
+}
+
+/* Clearfix for layout separation */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main Navigation Menu */
+.main-navigation li {
+    margin-right: 20px;
+}
+
+/* Slide Description Section */
+.slide-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Subtle background color */
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide-description h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Specials Content Section */
+.specials-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.special {
+    width: 30%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Body Content */
+.modal-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.modal-image {
+    flex: 1;
+}
+
+/* Reservation Button Styles */
+.reservation-btn-container {
+    text-align: center;
+    margin-top: 50px; /* Adjust space from content */
+    position: relative;
+    z-index: 2; /* Ensure it's above the background */
+}
+
+.reservation-btn {
+    display: inline-block;
+    background-color: #b87c33; /* Button color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative; /* Ensure button stays above the background */
+    z-index: 3; /* Ensure it's on top */
+}
+
+.reservation-btn:hover {
+    background-color: #c94e2f; /* Darken color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}

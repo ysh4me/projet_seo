@@ -1,0 +1,19 @@
+{
+  "name": "Veggie restaurant website",
+  "version": "1.0.0",
+  "authors": [
+    "ZURB <veggie.restaurant@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
